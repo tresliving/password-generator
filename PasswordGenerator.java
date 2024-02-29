@@ -2,7 +2,7 @@ import java.util.*;
 
 public class PasswordGenerator {
 
-    // Method to generate a random password
+    // How to generate a random password
     public static String newPassword(int length, boolean useLetters, boolean useNumbers, boolean useSpecial) {
         String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         String numbers = "0123456789";
@@ -23,7 +23,7 @@ public class PasswordGenerator {
             charPool += specialChars;
         }
         
-        // Generate random password
+        // Generate randomized password
         for (int i = 0; i < length; i++) {
             int index = random.nextInt(charPool.length());
             password.append(charPool.charAt(index));
@@ -33,8 +33,8 @@ public class PasswordGenerator {
     }
 
     public static void main(String[] args) {
-        // Example usage
-        int length = 12; // Desired password length
+        // How to use the newPassword method
+        int length = 16; // Password length of 16 characters - 16 characters is a safe length for a password
         boolean useLetters = true;
         boolean useNumbers = true;
         boolean useSpecial = true;
